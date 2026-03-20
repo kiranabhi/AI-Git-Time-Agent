@@ -23,7 +23,7 @@ PAT      = os.getenv("AZURE_DEVOPS_PAT")
 if os.getenv("OPENAI_BASE_URL"):
     openai_client = AzureOpenAI(
         api_key=os.getenv("OPENAI_API_KEY"),
-        azure_endpoint=os.getenv("OPENAI_BASE_URL"),          # https://myisbe-ai-reviewer.openai.azure.com/
+        azure_endpoint=os.getenv("OPENAI_BASE_URL"),
         api_version=os.getenv("OPENAI_API_VERSION", "2025-01-01-preview"),
     )
 else:
